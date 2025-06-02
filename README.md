@@ -58,6 +58,15 @@ This repository contains a customized WordPress setup using Docker, with enhance
 - Logs are stored in `wp-content/debug.log`
 - File editing in admin is disabled for security
 
+## Deploying on Railway
+
+1. Connect your GitHub repository to Railway.
+2. Set the following environment variables in the Railway Variables tab (see `.env.example`).
+3. Add persistent volumes for `/var/lib/mysql` (MySQL) and `/var/www/html/wp-content` (WordPress) if you want data to persist across deployments.
+4. Expose port 80 for the WordPress service.
+5. Click Deploy and follow the logs.
+6. Access your site via the Railway-provided URL.
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details. 
