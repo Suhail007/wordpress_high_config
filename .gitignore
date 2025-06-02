@@ -7,12 +7,14 @@ index.php
 license.txt
 readme.html
 
-# WordPress content
+# Ignore uploads and sensitive files only
 wp-content/uploads/
 wp-content/upgrade/
 wp-content/backup-db/
 wp-content/cache/
 wp-content/backups/
+
+wp-config-sample.php
 
 # Configuration files
 wp-config.php
